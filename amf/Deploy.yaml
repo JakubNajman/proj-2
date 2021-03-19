@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: amf-deployment
+spec: 
+  selector:
+    matchLabels:
+      app: amf
+  replicas: 3
+  template:
+    metadata:
+      labels: 
+        app: amf
+    spec: 
+      containers:
+      - name: amf
+        image: izbikoo/proj2_test:latest
+        ports:
+        - containerPort: 80

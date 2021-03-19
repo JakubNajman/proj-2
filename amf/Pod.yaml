@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: amf
+spec:
+  template:
+    spec:
+      containers:
+      - name: amf
+        image: izbikoo/proj2_test:latest
+      restartPolicy: Never
+    
