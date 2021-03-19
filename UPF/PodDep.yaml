@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: upf-deployment-job
+spec:
+  template:
+    # This is the pod template
+    spec:
+      containers:
+      - name: upf-deployment
+        image: marcinziolkowski/upf:v4
+        command: ['sh', '-c', 'echo "UPF UPF UPF UPF UPF UPF UPF UPF!" && sleep 3600']
+      restartPolicy: Never
