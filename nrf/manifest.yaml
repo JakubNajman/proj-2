@@ -1,0 +1,11 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: nrf
+spec:
+  template:
+    spec:
+      containers:
+      - name: nrf
+        image: maksimszaszkow/nrf:latest
+      restartPolicy: OnFailure
