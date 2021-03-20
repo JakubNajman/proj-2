@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nef-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nef
+  template:
+    metadata: 
+      labels:
+        app: nef
+    spec:
+      containers:
+      - name: nef
+        image: sonyalevchenko/nef:v1
+        ports: 
+          - containerPort: 80

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Job
+metadata:
+  name: nef
+spec:
+  template:
+    spec:
+      containers:
+        - name: nef
+          image: sonyalevchenko/nef:v1
+      restartPolicy: Never
