@@ -20,5 +20,5 @@ spec:
       containers:
       - name: iperf-client
         image: alectolytic/netperf:latest
-        command: ['netperf','--help']
+        command: ['/bin/bash','-c','sleep infinity']
       terminationGracePeriodSeconds: 0
