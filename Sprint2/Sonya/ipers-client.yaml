@@ -19,6 +19,6 @@ spec:
           effect: NoSchedule
       containers:
       - name: iperf-client
-        image: sonyalevchenko/iperf3:latest
+        image: mlabbe/iperf:latest
         command: ['/bin/sh', '-c', 'sleep infinity']
       terminationGracePeriodSeconds: 0

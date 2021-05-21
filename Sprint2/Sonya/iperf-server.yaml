@@ -30,8 +30,8 @@ spec:
           effect: NoSchedule
       containers:
       - name: iperf-server
-        image: sonyalevchenko/iperf3:latest
-        args: ['-s']
+        image: mlabbe/iperf:latest
+        args: ['-s','-u','-i','1']
         ports:
         - containerPort: 5201
           name: server
