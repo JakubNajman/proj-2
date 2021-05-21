@@ -20,5 +20,5 @@ spec:
       containers:
       - name: iperf-client
         image: mlabbe/iperf:latest
-        command: ['/bin/sh', '-c','sleep infinity']
+        command: ['/bin/sh', '-c', 'sleep infinity']
       terminationGracePeriodSeconds: 0
