@@ -31,7 +31,7 @@ spec:
       containers:
       - name: iperf-server
         image: mlabbe/iperf:latest
-        args: ['-s','-u','-i','1']
+        args: ['/bin/sh', '-c', 'sleep infinity']
         ports:
         - containerPort: 5201
           name: server
