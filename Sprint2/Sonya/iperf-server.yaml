@@ -30,8 +30,8 @@ spec:
           effect: NoSchedule
       containers:
       - name: iperf-server
-        image: mlabbe/iperf:latest
-        args: ['-s','-u','-i','1']
+        image: alectolytic/netperf:latest
+        args: ['-p','5001']
         ports:
         - containerPort: 5001
           name: server

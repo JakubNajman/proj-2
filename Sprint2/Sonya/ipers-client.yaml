@@ -20,5 +20,5 @@ spec:
       containers:
       - name: iperf-client
         image: alectolytic/netperf:latest
-        command: ['netperf','-H','10.104.1.29','-t','TCP_RR','-o','-o min_latency,max_latency,mean_latency']
+        command: ['/bin/sh', '-c', 'sleep infinity']
       terminationGracePeriodSeconds: 0
