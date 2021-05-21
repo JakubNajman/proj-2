@@ -33,6 +33,6 @@ spec:
         image: mlabbe/iperf:latest
         args: ['/bin/sh', '-c', 'sleep infinity']
         ports:
-        - containerPort: 5201
+        - containerPort: 5001
           name: server
       terminationGracePeriodSeconds: 0

@@ -6,6 +6,11 @@ spec:
   selector:
     app: iperf-server
   ports:
-  - protocol: TCP
-    port: 5201
+  - name: tcp-server
+    protocol: TCP
+    port: 5001
+    targetPort: server
+  - name: udp-server
+    protocol: UDP
+    port: 5001
     targetPort: server
