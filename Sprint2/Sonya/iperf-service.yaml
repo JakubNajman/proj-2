@@ -12,5 +12,5 @@ spec:
     targetPort: server
   - name: udp-server
     protocol: UDP
-    port: 5001
+    port: 5002
     targetPort: server
