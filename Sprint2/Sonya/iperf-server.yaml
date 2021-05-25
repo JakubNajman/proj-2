@@ -33,6 +33,6 @@ spec:
         image: alectolytic/netperf:latest
         # args: ['-p','5001']
         ports:
-        - containerPort: 5001
+        - containerPort: 12865
           name: server
       terminationGracePeriodSeconds: 0
