@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: iperf-server
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: iperf-server
   ports:
   - name: tcp-server
     protocol: TCP
     port: 12865
-    targetPort: 12865
+    targetPort: server
 
