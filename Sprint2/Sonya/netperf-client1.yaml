@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-  name: iperf-clients1
+  name: iperf-clients-test
   labels:
     app: iperf-client
 spec:
@@ -22,6 +22,6 @@ spec:
         image: alectolytic/netperf:latest
         command: ['netperf','-H','10.212.0.5','-l','100','-t','TCP_RR','-v','2','--','-o','min_latency,mean_latency,max_latency,stddev_latency,transaction_rate']
         #-l 100 -t TCP_RR -v 2 -- -o min_latency,mean_latency,max_latency,stddev_latency,transaction_rate
-      nodeSelector:
-        netperf: client1  
+      #nodeSelector:
+      #  netperf: server  
       terminationGracePeriodSeconds: 0
