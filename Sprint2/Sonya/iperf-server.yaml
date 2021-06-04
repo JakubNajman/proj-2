@@ -35,4 +35,6 @@ spec:
         ports:
         - containerPort: 12865
           name: server
+      nodeSelector:
+        netperf: server
       terminationGracePeriodSeconds: 0
