@@ -1,9 +1,9 @@
 From ubuntu
 
-#Lets install NGINX
+#Install NGINX
 RUN apt-get -y update && apt-get -y install nginx
 
-#Lets copy the local index.html to /tmp
+#Copy the local index.html to /tmp
 COPY index.html /tmp/index.html
 COPY default /etc/nginx/sites-available/default
 
