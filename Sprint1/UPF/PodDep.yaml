@@ -4,7 +4,7 @@ metadata:
   name: upf-deployment-job
 spec:
   template:
-    # This is the pod template
+    # Pod template
     spec:
       containers:
       - name: upf-deployment
